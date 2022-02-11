@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agusteca - Delivery de bebidas / CABA ARGENTINA">
+    <meta name="keywords" content="Agusteca, delivery, bebidas, drinks, caba, argentina">
+    <title>AGUSTECA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/logo.png.ico">
+</head>
+
+<body id="body">
+    <div class="validation">
+        <a href="index.html">
+            <h2 class="header__title" aria-label="Home">Agusteca</h2>
+        </a>
+        <p class="header__info" id="validation__header__info">Delivery de bebidas , CABA </p>
+        <div class="validation__age">
+            <h3>Eres mayor de 18 años?</h3>
+            <div class="validation__age__container">
+                <button class="validation__age__yes">Si</button>
+                <button class="validation__age__no">No</button>
+            </div>
+        </div>
+        <div class="validation__denied">Debes ser mayor de edad para visitar el sitio.</div>
+    </div>
+    <nav class="nav">
+        <a href="index.html" class="nav__logo" aria-label="Home">AGUSTECA</a>
+        <ul class="nav__ul">
+            <li class="nav__ul__li"><button class="nav__ul__li__a" id="nav__ofertas" aria-label="Combos">Combos</button>
+            </li>
+            <li class="nav__ul__li"><button class="nav__ul__li__a" id="nav__productos"
+                    aria-label="Bebidas">Bebidas</button></li>
+            <li class="nav__ul__li"><a href="https://www.youtube.com/watch?v=sidPTvbTv9o" target="_blank" rel="noopener"
+                    class="nav__ul__li__a nav__ul__li__whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+            <li class="nav__ul__li">
+                <button class="nav__toggleLightDark__light" aria-label="toggle light/dark mode"><i
+                        class="bi bi-sun-fill"></i></button>
+                <button class="nav__toggleLightDark__dark" aria-label="toggle light/dark mode"><i
+                        class="bi bi-moon-fill"></i></button>
+            </li>
+        </ul>
+    </nav>
+        <!--WPP= CANCION FAV  -->
+    <header class="header">
+        <a href="index.html" class="header__title" id="header__title__main" aria-label="Home">
+            <h1>
+                <div class="header__title__word">
+                    <span>A</span><span>G</span><span>U</span><span>S</span></div>
+                <div class="header__title__word">
+                    <span>T</span><span>E</span><span>C</span><span>A</span></div>
+            </h1>
+        </a>
+        <p class="header__info">Bebidas, CABA </p>
+    </header>
+    <h2 class="featured">Destacados:</h2>
+    <main class="main">
+        <div class="carrito" aria-label="Abrir lista de compras" tabindex="0">
+            <div class="carrito__container">
+                <i class="bi bi-cart carrito__icon"></i>
+                <p class="carrito__numero"></p>
+            </div>
+            <p class="carrito__total"></p>
+        </div>
+
+        <div class="carrito__lista">
+            <button aria-label="Cerrar lista" class="carrito__lista__cerrar"><i
+                    class="bi bi-x-circle-fill"></i></button>
+            <h2 class="carrito__lista__title">LISTA DE COMPRA:</h2>
+            <div class="carrito__lista__content">
+                <ul class="carrito__lista__ul">
+                </ul>
+            </div>
+            <div class="carrito__lista__bottom">
+                <p class="carrito__lista__total"><span>TOTAL</span><span class="carrito__lista__total__number">$0</span>
+                </p>
+                <button aria-label="Vaciar Compra" class="carrito__lista__vaciar">VACIAR COMPRA</button>
+                <button aria-label="Ir al checkout" class="carrito__lista__checkout">IR AL CHECKOUT</button>
+            </div>
+        </div>
+
+        <div class="checkoutConfirmation"></div>
+
+        <aside class="ofertasFeatured">
+            <div class="ofertasFeatured__title">
+                <p>15% OFF</p>
+                <h2>COMBOS</h2>
+            </div>
+
+            <div class="ofertasFeatured__wrapper">
+
+            </div>
+        </aside>
+
+        <div class="productos" id="productosFeatured">
+
+        </div>
+
+        <div class="ofertasPage">
+            <button aria-label="Cerrar Ofertas" class="carrito__lista__cerrar carrito__lista__cerrar--ofertas"><i
+                    class="bi bi-x-circle-fill"></i></button>
+            <div class="ofertasPage__title">
+                <h2 class="header__title header__title--ofertas" id="header__title__ofertas" aria-label="Home">AGUSTECA
+                </h2>
+                <h3 class="header__title">COMBOS</h3>
+            </div>
+
+            <div class="ofertas ofertas--page" id="ofertas"></div>
+        </div>
+
+        <div class="productosPage">
+            <button aria-label="Cerrar Productos" class="carrito__lista__cerrar carrito__lista__cerrar--productos"><i
+                    class="bi bi-x-circle-fill"></i></button>
+            <div class="productosPage__title">
+                <h2 class="header__title header__title--productos" id="header__title__productos" aria-label="Home">
+                    AGUSTECA</h2>
+                <h3 class="header__title">BEBIDAS</h3>
+            </div>
+
+            <p class="productosPage__filterText">Filtrar por: </p>
+            <div class="productosPage__filter">
+                <select name="filter" id="productosPage__filter" class="productosPage__filter__select">
+                    <option value="todas" selected="selected">Todas</option>
+                    <option value="cervezas">Cervezas</option>
+                    <option value="vinos">Vinos</option>
+                    <option value="aguardientes">Aguardientes</option>
+                    <option value="licores">Licores</option>
+                    <option value="sinalcohol">Sin alcohol</option>
+                </select>
+            </div>
+
+            <div class="productos productos--page" id="productosTotal">
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__nav__ul">
+                <li class="footer__nav__ul__li"><button class="footer__nav__ul__li__a" id="footer__nav__ofertas"
+                        aria-label="Combos">Combos</button></li>
+                <li class="footer__nav__ul__li"><button class="footer__nav__ul__li__a" id="footer__nav__productos"
+                        aria-label="Bebidas">Bebidas</button></li>
+                <li class="footer__nav__ul__li"><a href="https://www.youtube.com/watch?v=sidPTvbTv9o" target="_blank" rel="noopener"
+                        class="footer__nav__ul__li__whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+            </ul>
+        </nav>
+        <div class="footer__AGUSTECA">
+            <div class="footer__AGUSTECA__bf"><a href="#body" class="footer__AGUSTECA__logo">AGUSTECA<i
+                        class="bi bi-arrow-up"></i></a></div>
+            <div class="footer__AGUSTECA__hr"></div>
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="js/Bebida.js"></script>
+    <script src="js/Combo.js"></script>
+    <script src="js/ShoppingCart.js"></script>
+    <script src="js/Stock.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
